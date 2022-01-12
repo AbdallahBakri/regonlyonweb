@@ -11,7 +11,7 @@ end
 function regonlyonweb:action(playername)
 	if not regonlyonweb.state then return end
 
-	disconnect_string = "Registration is only accepted for users who register for an account on the website."
+	disconnect_string = "Access denied. Reason: You must have an account created in order to join this server, If you would like an account created, please visit our website."
 
 	if regonlyonweb.players[playername] == 1 then
 		minetest.after(0, function()
